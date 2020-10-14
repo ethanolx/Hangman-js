@@ -1,0 +1,265 @@
+! PLEASE READ THIS DOCUMENTATION BEFORE PROCEEDING TO READ, WRITE OR EXECUTE ANY FILES !
+
+======================================================
+$ GENERAL NOTES
+
+
+AUTHOR:
+
+#   Full Name:      Ethan Tan Wee En
+#   Admin no.:      p2012085
+#   Class:          DAAA/FT/1A/03
+#   School:         School of Computing (SOC),
+#                   Singapore Polytechnic
+
+
+DATE:
+
+10 August 2020
+
+
+PURPOSE:
+
+Year 1 / Semester 1 Fundamentals of Programming Project (CA2)
+
+
+FOLDERS:
+
+*   Shell Folder Name:          DAAA1A03_2012085_Ethan_Tan
+*   Workspace Folder Name:      Hangman Game
+
+
+HOW TO RUN THE PROGRAM:
+
+1)  Open "Hangman Game" as workspace folder in VSCode / command prompt / terminal
+2)  Run main.js without debugging ( < node main.js > for command line)
+--------------------- alternative --------------------
+2)  Run any js file without debugging
+    (settings have been made such that main.js will run)
+
+
+VIEW:
+
+#   Expand the terminal window to view tables in the terminal
+#   Scrolling may be required for the rules
+#   Try not to scroll up - console.clear() does not clear everything
+
+
+OTHER NOTES:
+
+*   Please do not alter or modify these files:
+        1)  ./.vscode/*
+        2)  ./js/*
+        3)  ./node_modules/*
+        4)  ./documentation.txt
+        5)  ./package-lock.json
+
+*   The following files may be modified:
+        1)  ./csv/scores.csv    (keeps the records of previous games)
+        2)  ./csv/words.csv     (keeps the list of words to be used in games)
+        3)  ./csv/wordsII.csv   (keeps an alternative list words to be used)
+        4)  ./main.js           (sourceFileName, recordsFileName & maxScore may be modified accordingly)
+
+*   For better aesthetics:
+        1)  install "Better Comments" extension by Aaron Bond from the extension marketplace
+
+
+FILE STRUCTURE:
+
+  Hangman Game  ---- .vscode ---- launch.json
+                 |            `-- settings.json
+                 |
+                 `-- csv ---- scores.csv
+                 |        `-- words.csv
+                 |        `-- wordsII.csv
+                 |
+                 `-- js ---- game.js
+                 |       `-- hangman.js
+                 |       `-- hangmanUtils.js
+                 |       `-- statistics.js
+                 |       `-- utilities.js
+                 |       `-- word.js
+                 |       `-- wordCollection.js
+                 |
+                 `-- node_modules ---- colors...
+                 |                 `-- convert-csv-to-json...
+                 |                 `-- fs...
+                 |                 `-- readline-sync...
+                 |
+                 `-- documentation.txt
+                 `-- main.js
+                 `-- package-lock.json
+
+======================================================
+$ CODE OVERVIEW [NOMENCLATURE & ORGANISATION]
+
+
+# METHODS
+
++-------------------+-----------------------------------------------------------+---------------+
+|   Type of method  |   Behaviour                                               |   Frequency   |
++-------------------+-----------------------------------------------------------+---------------+
+|                   |                                                           |               |
+|   Check           |   Returns a boolean value after performing a check        |       7       |
+|                   |                                                           |               |
++-------------------+-----------------------------------------------------------+---------------+
+|                   |                                                           |               |
+|   Convert         |   Takes in one parameter  (type a)                        |       8       |
+|                   |   Returns another value   (type b)                        |               |
+|                   |                                                           |               |
++-------------------+-----------------------------------------------------------+---------------+
+|                   |                                                           |               |
+|   Display         |   Does not return any value                               |       28      |
+|                   |   Logs some data on the console                           |               |
+|                   |                                                           |               |
++-------------------+-----------------------------------------------------------+---------------+
+|                   |                                                           |               |
+|   Format          |   Takes in one/two parameters                             |       3       |
+|                   |   Returns the formatted version of the passed argument    |               |
+|                   |                                                           |               |
++-------------------+-----------------------------------------------------------+---------------+
+|                   |                                                           |               |
+|   Generate        |   Assigns a value to a property                           |       1       |
+|                   |                                                           |               |
++-------------------+-----------------------------------------------------------+---------------+
+|                   |                                                           |               |
+|   Get             |   Returns some value (non-boolean)                        |       11      |
+|                   |                                                           |               |
++-------------------+-----------------------------------------------------------+---------------+
+|                   |                                                           |               |
+|   LL (lifeline)   |   Used for a lifeline                                     |       4       |
+|                   |                                                           |               |
++-------------------+-----------------------------------------------------------+---------------+
+|                   |                                                           |               |
+|   Op (operation)  |   Operates the running of the game                        |       4       |
+|                   |                                                           |               |
++-------------------+-----------------------------------------------------------+---------------+
+|                   |                                                           |               |
+|   Perform         |   Does not return any value                               |       9       |
+|                   |   Does some action (generic)                              |               |
+|                   |                                                           |               |
++-------------------+-----------------------------------------------------------+---------------+
+|                   |                                                           |               |
+|   Run             |   Operates the program's overarching functions            |       3       |
+|                   |                                                           |               |
++-------------------+-----------------------------------------------------------+---------------+
+|                   |                                                           |               |
+|   Str (string)    |   Custom string operator                                  |       1       |
+|                   |                                                           |               |
++-------------------+-----------------------------------------------------------+---------------+
+
+
+# CLASSES
+
++-------------------+---------------------------+---------------------------+-----------------------------------+
+|   Name of class   |   Description             |   Properties              |   Methods                         |
++-------------------+---------------------------+---------------------------+-----------------------------------+
+|                   |                           |                           |                                   |
+|    Word           |   Represents each word    |   category (str)          |   checkIfLetterHasBeenGuessed     |
+|                   |   in the game             |   definition (str)        |   checkIfVowelsAllRevealed        |
+|                   |                           |   guessedLetters (str[])  |   checkIfWordHasLetter            |
+|                   |   Properties: 6           |   lettersToGuess (str[])  |   displayHangman                  |
+|                   |   Methods:    15          |   lives (num)             |   displayLetters                  |
+|                   |                           |   text (str)              |   displayLettersToGuess           |
+|                   |                           |                           |   displayLives                    |
+|                   |                           |                           |   displayWordInfo                 |
+|                   |                           |                           |   getLettersToBeGuessed           |
+|                   |                           |                           |   lladdLives                      |
+|                   |                           |                           |   lldisplayAllVowels              |
+|                   |                           |                           |   lldisplayWordDefinition         |
+|                   |                           |                           |   llskipAndScoreWord              |
+|                   |                           |                           |   performGuessCheck               |
+|                   |                           |                           |   performGuessSuccess             |
+|                   |                           |                           |                                   |
++-------------------+---------------------------+---------------------------+-----------------------------------+
+|                   |                           |                           |                                   |
+|   WordCollection  |   Represents the pool     |   currentWord (Word)      |   checkIfEndOfGame                |
+|                   |   of words                |   difficulty (str)        |   checkIfEndOfRound               |
+|                   |                           |   lifelinesLeft (num[])   |   checkRoundSuccess               |
+|                   |   Properties: 9           |   livesPerRound (num)     |   convertJSONtoWord               |
+|                   |   Methods:    22          |   maxScore (num)          |   displayCategories               |
+|                   |                           |   round (num)             |   displayEndOfGameMessage         |
+|                   |                           |   score (num)             |   displayRoundFailure             |
+|                   |                           |   sourceFileName (str)    |   displayRoundInfo                |
+|                   |                           |   words (Word[])          |   displayRoundNumber              |
+|                   |                           |                           |   displayRoundResults             |
+|                   |                           |                           |   displayRoundSuccess             |
+|                   |                           |                           |   displayScore                    |
+|                   |                           |                           |   generateRandomWord              |
+|                   |                           |                           |   getCategories                   |
+|                   |                           |                           |   getChoiceCategory               |
+|                   |                           |                           |   getWords                        |
+|                   |                           |                           |   performEndOfRound               |
+|                   |                           |                           |   performInputCheck               |
+|                   |                           |                           |   performLifeline                 |
+|                   |                           |                           |   performLifelineValidation       |
+|                   |                           |                           |   performScoreIncrement           |
+|                   |                           |                           |   performWordRemoval              |
+|                   |                           |                           |                                   |
++-------------------+---------------------------+---------------------------+-----------------------------------+
+|                   |                           |                           |                                   |
+|   Game (tbc)      |   Oversees the games'     |   maxScore (num)          |   opContinuousGameplays           |
+|                   |   operations              |   recordsFileName (str)   |   opOneGameplay                   |
+|                   |                           |   sourceFileName (str)    |   opOneRound                      |
+|                   |   Properties: 4           |   wordCollection (WC)     |   opOneRoundIndependent           |
+|                   |   Methods:    4           |                           |                                   |
+|                   |                           |                           |                                   |
++-------------------+---------------------------+---------------------------+-----------------------------------+
+|                   |                           |                           |                                   |
+|   Statistics      |   Oversees the records    |   records (JSON[])        |   displayAllRecords               |
+|                   |   and statistics          |                           |   displayLeaderboard              |
+|                   |                           |                           |   displayPlayerHighscores         |
+|                   |   Properties: 1           |                           |   displayPlayerRecords            |
+|                   |   Methods:    9           |                           |   displayPlayerStatistics         |
+|                   |                           |                           |   displayStatistics               |
+|                   |                           |                           |   getPlayerRecords                |
+|                   |                           |                           |   getTopScores (static)           |
+|                   |                           |                           |   performRecordScore (static)     |
+|                   |                           |                           |                                   |
++-------------------+---------------------------+---------------------------+-----------------------------------+
+|                   |                           |                           |                                   |
+|   HangmanUtils    |   Houses all the          |   difficulties (str[])    |   convertDiffLevelToDiff          |
+|                   |   utilities related to    |   symbol (str)            |   convertDiffLevelToLives         |
+|                   |   Hangman                 |                           |   convertDiffToDiffLevel          |
+|                   |                           |                           |   displayDifficulties             |
+|                   |   *fully static class     |                           |   displayGameOptions              |
+|                   |                           |                           |   displayIntroduction             |
+|                   |   Properties: 2           |                           |   displayLifelineOptions          |
+|                   |   Methods:    17          |                           |   displayRecordsAsFormattedTable  |
+|                   |                           |                           |   displayRecordsAsLeaderboard     |
+|                   |                           |                           |   displayRecordsAsStatisticsTable |
+|                   |                           |                           |   displayRules                    |
+|                   |                           |                           |   displayStatsOptions             |
+|                   |                           |                           |   getDifficultyLevel              |
+|                   |                           |                           |   getFavDifficulties              |
+|                   |                           |                           |   getLeastFavDifficulties         |
+|                   |                           |                           |   getStatistics                   |
+|                   |                           |                           |   getUsername                     |
+|                   |                           |                           |                                   |
++-------------------+---------------------------+---------------------------+-----------------------------------+
+|                   |                           |                           |                                   |
+|   Utilities       |   Houses all the          |   alphabet (str[])        |   checkIfNewIsGreater             |
+|                   |   general utilities       |   vowels (str[])          |   convertCSVtoJSON                |
+|                   |                           |                           |   convertDayNumToDay              |
+|                   |   *fully static class     |                           |   convert_ms_ToTimeString         |
+|                   |                           |                           |   convertTimeStringTo_ms          |
+|                   |   Properties: 2           |                           |   formatCapitalisation            |
+|                   |   Methods:    9           |                           |   formatString                    |
+|                   |                           |                           |   formatWithoutExtraSpaces        |
+|                   |                           |                           |   strReplaceByIndex               |
+|                   |                           |                           |                                   |
++-------------------+---------------------------+---------------------------+-----------------------------------+
+|                   |                           |                           |                                   |
+|   Hangman         |   Consolidates all the    |   maxScore (num)          |   run                             |
+|                   |   classes to form a       |   recordsFileName (str)   |   runGame                         |
+|                   |   fully functional        |   sourceFileName (str)    |   runStatistics                   |
+|                   |   Hangman system          |                           |                                   |
+|                   |                           |                           |                                   |
+|                   |   Properties: 3           |                           |                                   |
+|                   |   Methods:    3           |                           |                                   |
+|                   |                           |                           |                                   |
++-------------------+---------------------------+---------------------------+-----------------------------------+
+
+======================================================
+
+Happy Gaming! :)

@@ -1,0 +1,131 @@
+text;category;definition
+
+anteater;animals;a mammal that feeds on ants and termites, with a long snout and sticky tongue
+aardvark;animals;a nocturnal badger-sized burrowing mammal of Africa, with long ears, a tubular snout, and a long extensible tongue, feeding on ants and termites
+badger;animals;a heavily built omnivorous nocturnal mammal of the weasel family, typically having a grey and black coat
+chimpanzee;animals;a great ape with large ears, mainly black coloration, and lighter skin on the face, native to the forests of west and central Africa
+dragonfly;animals;a fast-flying long-bodied predatory insect with two pairs of large transparent wings which are spread out sideways at rest
+emperor penguin;animals;the largest penguin, which has a yellow patch on each side of the head and rears its young during the Antarctic winter
+flamingo;animals;a tall wading bird with mainly pink or scarlet plumage and long legs and neck
+giraffe;animals;a large African mammal with a very long neck and forelegs, having a coat patterned with brown patches separated by lighter lines
+hornbill;animals;a medium to large tropical Old World bird, having a very large curved bill that typically has a large horny or bony casque
+iguana;animals;a large arboreal tropical American lizard with a spiny crest along the back and greenish coloration
+impala;animals;a graceful antelope often seen in large herds in open woodland in southern and East Africa
+jellyfish;animals;a free-swimming marine coelenterate with a gelatinous bell- or saucer-shaped body that is typically transparent and has stinging tentacles around the edge
+kingfisher;animals;an often brightly coloured bird with a large head and long sharp beak, typically diving for fish from a perch
+leech;animals;an aquatic or terrestrial annelid worm with suckers at both ends. Many species are bloodsucking parasites, especially of vertebrates, and others are predators
+manta ray;animals;a devil ray that occurs in tropical seas and may reach very great size
+narwhal;animals;a small Arctic whale, the male of which has a long forward-pointing spirally twisted tusk developed from one of its teeth
+orangutan;animals;a large mainly solitary arboreal ape with long red hair, long arms, and hooked hands and feet, native to Borneo and Sumatra
+orca;animals;another term for killer whale
+ostrich;animals;a flightless swift-running African bird with a long neck, long legs, and two toes on each foot. It is the largest living bird
+platypus;animals;a semiaquatic egg-laying mammal which frequents lakes and streams in eastern Australia
+pufferfish;animals;a stout-bodied marine or freshwater fish that typically has spiny skin and inflates itself like a balloon when threatened
+quail;animals;a small short-tailed Old World game bird resembling a tiny partridge, typically having brown camouflaged plumage or a small or medium-sized New World game bird, the male of which has distinctive facial markings
+rhinoceros;animals;a large, heavily built plant-eating mammal with one or two horns on the nose and thick folded skin, native to Africa and southern Asia
+sunfish;animals;a large deep-bodied marine fish of warm seas, with tall dorsal and anal fins near the rear of the body and a very short tail
+tasmanian devil;animals;a heavily built marsupial with a large head, powerful jaws, and mainly black fur, found only in Tasmania
+vulture;animals;a large bird of prey with the head and neck more or less bare of feathers, feeding chiefly on carrion and reputed to gather with others in anticipation of the death of a sick or injured animal or person
+wasp;animals;a social winged insect which has a narrow waist and a sting and is typically yellow with black stripes
+wombat;animals;a burrowing plant-eating Australian marsupial which resembles a small bear with short legs
+yak;animals;a large domesticated wild ox with shaggy hair, humped shoulders, and large horns, used in Tibet as a pack animal and for its milk, meat, and hide
+zebra;animals;an African wild horse with black-and-white stripes and an erect mane
+
+
+
+anemometer;weather;an instrument for measuring the speed of the wind, or of any current of gas
+atmosphere;weather;the envelope of gases surrounding the earth or another planet
+barometer;weather;an instrument measuring atmospheric pressure, used especially in forecasting the weather and determining altitude
+Beaufort scale;weather;a scale of wind speed based on a visual estimation of the wind's effects, ranging from force 0 (less than 1 knot or 1 km/h, ‘calm’) to force 12 (64 knots or 118 km/h and above, ‘hurricane’)
+climate change;weather;a change in global or regional climate patterns, in particular a change apparent from the mid to late 20th century onwards and attributed largely to the increased levels of atmospheric carbon dioxide produced by the use of fossil fuels
+cyclone;weather;a system of winds rotating inwards to an area of low barometric pressure, with an anticlockwise (northern hemisphere) or clockwise (southern hemisphere) circulation
+drizzle;weather;light rain falling in very fine drops
+duststorm;weather;a strong, turbulent wind which carries clouds of fine dust, soil, and sand over a large area
+flash flood;weather;a sudden local flood, typically due to heavy rain
+gale;weather;a very strong wind
+haze;weather;an obscuration of the lower atmosphere, typically caused by fine suspended particles
+heatwave;weather;a prolonged period of abnormally hot weather
+hygrometer;weather;an instrument for measuring the humidity of the air or a gas
+ice fog;weather;fog formed of minute ice crystals
+land breeze;weather;a breeze blowing towards the sea from the land, especially at night, owing to the relative warmth of the sea
+low pressure area;weather;a region where the air pressure is lower than that of surrounding locations
+meteorology;weather;the branch of science concerned with the processes and phenomena of the atmosphere, especially as a means of forecasting the weather
+monsoon;weather;a seasonal prevailing wind in the region of South and SE Asia, blowing from the south-west between May and September and bringing rain, or from the north-east between October and April
+overcast;weather;(of the sky or weather) marked by a covering of grey cloud; dull
+ozone;weather;a colourless unstable toxic gas with a pungent odour and powerful oxidizing properties, formed from oxygen by electrical discharges or ultraviolet light. It differs from normal oxygen (O2) in having three atoms in its molecule
+permafrost;weather;a thick subsurface layer of soil that remains below freezing point throughout the year, occurring chiefly in polar regions
+precipitation;weather;rain, snow, sleet, or hail that falls to or condenses on the ground
+rainbow;weather;an arch of colours visible in the sky, caused by the refraction and dispersion of the sun's light by rain or other water droplets in the atmosphere. The colours of the rainbow are generally said to be red, orange, yellow, green, blue, indigo, and violet
+relative humidity;weather;the amount of water vapour present in air expressed as a percentage of the amount needed for saturation at the same temperature
+season;weather;each of the four divisions of the year (spring, summer, autumn, and winter) marked by particular weather patterns and daylight hours, resulting from the earth's changing position with regard to the sun
+sunshower;weather;a brief and typically light fall of rain while the sun is shining
+thunderclap;weather;a crash of thunder
+turbulence;weather;violent or unsteady movement of air or water, or of some other fluid
+waterspout;weather;a rotating column of water and spray formed by a whirlwind occurring over the sea or other body of water
+wind vane;weather;a revolving pointer to show the direction of the wind, typically mounted on top of a building
+
+
+
+abstraction;computer science;the quality of dealing with ideas rather than details
+algorithm;computer science;a process or set of rules to be followed in calculations or other problem-solving operations, especially by a computer
+analogue;computer science;not involving or relating to the use of computer technology, as a contrast to a digital counterpart
+application;computer science;computer software designed to perform a group of coordinated functions, tasks, or activities for the benefit of end users
+artificial intelligence;computer science;the theory and development of computer systems able to perform tasks normally requiring human intelligence, such as visual perception, speech recognition, decision-making, and translation between languages
+big data;computer science;extremely large data sets that may be analysed computationally to reveal patterns, trends, and associations, especially relating to human behaviour and interactions
+binary;computer science;relating to, using, or denoting a system of numerical notation that has 2 rather than 10 as a base
+boolean;computer science;denoting a system of algebraic notation used to represent logical propositions by means of the binary digits 0 (false) and 1 (true), especially in computing and electronics
+byte;computer science;a group of binary digits or bits (usually eight) operated on as a unit
+class;computer science;in object-oriented programming, an extensible program-code-template for creating objects
+client;computer science;a piece of computer hardware or software that accesses a service made available by a server
+cloud computing;computer science;the practice of using a network of remote servers hosted on the Internet to store, manage, and process data, rather than a local server or a personal computer
+compiler;computer science;a program that converts instructions into a machine-code or lower-level form so that they can be read and executed by a computer
+computation;computer science;the action of mathematical calculation
+cryptography;computer science;the practice and study of techniques for secure communication in the presence of third parties called adversaries
+cybersecurity;computer science;the state of being protected against the criminal or unauthorized use of electronic data, or the measures taken to achieve this
+daemon;computer science;a background process that handles requests for services such as print spooling and file transfers, and is dormant when not required
+data centre;computer science;a large group of networked computer servers typically used by organizations for the remote storage, processing, or distribution of large amounts of data
+data structure;computer science;a specialized format for organizing, processing, retrieving and storing data
+download;computer science;copy (data) from one computer system to another, typically over the Internet
+encryption;computer science;the process of converting information or data into a code, especially to prevent unauthorized access
+interface;computer science;a device or program enabling a user to communicate with a computer or a device or program for connecting two items of hardware or software so that they can be operated jointly or communicate with each other
+interpreter;computer science;a program that can analyse and execute a program line by line
+kernel;computer science;the most basic level or core of an operating system, responsible for resource allocation, file management, and security
+library;computer science;a collection of programs and software packages made generally available, often consisting of configuration data, documentation, help data, message templates, pre-written code and subroutines, classes, values, or type specifications
+operating system;computer science;the low-level software that supports a computer's basic functions, such as scheduling tasks and controlling peripherals
+overclock;computer science;run (the processor of one's computer) at a speed higher than that intended by the manufacturers
+programming;computer science;the process of writing computer programs
+protocol stack;computer science;a series of sets of rules governing the exchange or transmission of data between devices
+recursion;computer science;occurs when a thing is defined in terms of itself or of its type. For example, functions which contain code that call themselves
+
+
+
+calculus;calculus;the mathematical study of continuous change, in the same way that geometry is the study of shape and algebra is the study of generalizations of arithmetic operations
+chain rule;calculus;a formula for computing the derivative of the composition of two or more functions
+convergent series;calculus;a mathematical series where the sequence of its partial sums tend to a limit
+derivative;calculus;an expression representing the rate of change of a function with respect to an independent variable
+euler's number;calculus;the number e, evaluating to roughly 2.71828
+exponential;calculus;of or expressed by a mathematical exponent
+function;calculus;f(x) = ...
+gradient;calculus;the degree of steepness of a graph at any point
+hyperbolic;calculus;relating to a hyperbola
+identity function;calculus;a function that always returns the same value that was used as its argument or: f(x) = x
+imaginary;calculus;(of a number or quantity) expressed in terms of the square root of a negative number (usually the square root of −1, represented by i or j)
+improper fraction;calculus;
+inflection;calculus;a change of curvature from convex to concave at a particular point on a curve
+instantaneous;calculus;existing or measured at a particular instant
+integral;calculus;a function of which a given function is the derivative, i.e. which yields that function when differentiated, and which may express the area under the curve of a graph of the function
+logarithm;calculus;a quantity representing the power to which a fixed number (the base) must be raised to produce a given number
+parabola;calculus;a symmetrical open plane curve formed by the intersection of a cone with a plane parallel to its side. The path of a projectile under the influence of gravity follows a curve of this shape
+partial fraction decomposition;calculus;the process of starting with the simplified fraction and taking it apart to find its initial polynomial fractions
+partial integration;calculus;a process that finds the integral of a product of functions in terms of the integral of the product of their derivative and antiderivative
+polynomial;calculus;an expression of more than two algebraic terms, especially the sum of several terms that contain different powers of the same variable(s)
+quotient rule;calculus;a formula for finding the derivative of a function that is the ratio of two functions
+reciprocal;calculus;an expression or function so related to another that their product is unity or the quantity obtained by dividing the number one by a given quantity
+scalar;calculus;(of a quantity) having only magnitude, not direction
+squeeze theorem;calculus;a method of solving f(x) <= g(x) <= h(x) by finding the point where f(x) = h(x)
+stationary point;calculus;a point on a curve where the gradient is zero
+summation;calculus;the process of adding things together
+tangent;calculus;a straight line or plane that touches, but does not intersect, a curve or curved surface
+trigonometry;calculus;the branch of mathematics dealing with the relations of the sides and angles of triangles and with the relevant functions of any angles
+upper bound;calculus;a value that is greater than or equal to every element of a set of data
+variable;calculus;a quantity which during a calculation is assumed to vary or be capable of varying in value

@@ -1,0 +1,26 @@
+{
+  "name": "hangman-game",
+  "version": "1.0.0",
+  "description": "PROJECT DOCUMENTATION\r =====================",
+  "main": "main.js",
+  "dependencies": {
+    "readline-sync": "^1.4.10",
+    "fs": "^0.0.1-security",
+    "convert-csv-to-json": "^0.0.15",
+    "colors": "^1.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ethanolx/Hangman-js.git"
+  },
+  "author": "Ethan Tan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ethanolx/Hangman-js/issues"
+  },
+  "homepage": "https://github.com/ethanolx/Hangman-js#readme"
+}
